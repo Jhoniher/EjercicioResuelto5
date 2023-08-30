@@ -1,20 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package ejercicioresuelto5;
 
-/**
- *
- * @author Jhony
- */
+import java.util.Scanner;
+
 public class EjercicioResuelto5 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner entrada=new Scanner(System.in);
+        double suma, x, y; 
+        suma=0;
+        System.out.println("Ingrese el valor de X: ");
+        x=entrada.nextInt(); 
+        suma=suma+x;
+        System.out.println("Ingrese el valor de Y: ");
+        y=entrada.nextInt();
+        x=x+Math.pow(y,2);
+        suma=suma+(x/y);
+        System.out.println("EL VALOR DE LA SUMA ES: "+suma);
     }
     
 }
